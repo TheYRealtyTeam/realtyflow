@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const StatesCoverage = () => {
@@ -15,17 +14,22 @@ const StatesCoverage = () => {
   return (
     <div className="text-center mb-16 reveal">
       <h3 className="text-3xl font-bold mb-8 text-yrealty-navy">
-        Expanding Our Reach Nationwide
+        Our Growing Footprint
       </h3>
       <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-        We're actively expanding our property management services across the country. 
-        Our goal is to bring our exceptional level of service and expertise to property owners nationwide.
+        We are actively expanding our exceptional property management services across various regions,
+        bringing our expertise to more communities and property owners.
       </p>
       
       <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
         <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-10 gap-2 text-sm">
           {states.map((state, index) => (
-            <div key={index} className="p-2 bg-yrealty-blue/10 rounded text-yrealty-navy font-medium hover:bg-yrealty-accent hover:text-white transition-colors cursor-default">
+            <div 
+              key={index} 
+              className="p-2 bg-yrealty-blue/10 rounded text-yrealty-navy font-medium 
+                         hover:bg-yrealty-accent hover:text-white transition-all duration-300 
+                         transform hover:scale-105 cursor-default shadow-sm hover:shadow-md"
+            >
               {state}
             </div>
           ))}
