@@ -1,0 +1,40 @@
+const StatesCoverage = () => {
+  const states = [
+    "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware",
+    "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky",
+    "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi",
+    "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico",
+    "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania",
+    "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont",
+    "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
+  ];
+
+  return (
+    <div className="text-center mb-16 reveal">
+      <h3 className="text-3xl font-bold mb-8 text-yrealty-navy">
+        Our Nationwide Footprint
+      </h3>
+      <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+        We are proud to extend our exceptional property management services across all 50 states,
+        ensuring every client receives the highest standard of care and expertise.
+      </p>
+      
+      <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+        <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-10 gap-2 text-sm">
+          {states.map((state, index) => (
+            <div 
+              key={index} 
+              className="p-2 bg-yrealty-blue/10 rounded text-yrealty-navy font-medium 
+                         hover:bg-yrealty-accent hover:text-white transition-all duration-300 
+                         transform hover:scale-105 cursor-default shadow-sm hover:shadow-md"
+            >
+              {state}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default StatesCoverage;
