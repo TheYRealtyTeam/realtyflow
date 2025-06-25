@@ -1,4 +1,3 @@
-
 import React from 'react';
 import TechnologyFeatures from './areas/TechnologyFeatures';
 import ProcessSteps from './areas/ProcessSteps';
@@ -13,11 +12,11 @@ const AreasSection = () => {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-yrealty-navy reveal">
-            Growing Excellence, Local Expertise
+            Nationwide
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-4xl mx-auto reveal leading-relaxed">
-            Building our property management network with trained team members, 
-            cutting-edge technology, and personalized service that delivers results wherever we serve.
+            Delivering unparalleled property management services across the nation,
+            combining cutting-edge technology with personalized local expertise to ensure optimal results for every client.
           </p>
         </div>
 
